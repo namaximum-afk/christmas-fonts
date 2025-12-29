@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Christmas Fonts | High-End Holiday Designs</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Great+Vibes&family=Cinzel+Decorative:wght@400;700;900&family=Cookie&family=Spirax&family=Satisfy&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --xmas-red: #b3000c;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        
+        /* Font styles for preview */
+        .font-mountains { font-family: 'Mountains of Christmas', cursive; }
+        .font-vibes { font-family: 'Great Vibes', cursive; }
+        .font-cinzel { font-family: 'Cinzel Decorative', serif; }
+        .font-cookie { font-family: 'Cookie', cursive; }
+        .font-spirax { font-family: 'Spirax', system-ui; }
+        .font-satisfy { font-family: 'Satisfy', cursive; }
+
+        /* Snowfall effect */
+        .snow-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 0;
+        }
+        .snowflake {
+            position: absolute; background: white; border-radius: 50%; opacity: 0.8;
+            pointer-events: none; animation: fall linear infinite;
+        }
+        @keyframes fall { to { transform: translateY(100vh) translateX(20px); } }
+
+        /* Dark Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .glass-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(179, 0, 12, 0.25);
+            border-color: rgba(179, 0, 12, 0.4);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(to right, #fbf5b7, #d4af37, #fbf5b7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .affiliate-btn {
+            background: linear-gradient(135deg, #b3000c 0%, #7a0008 100%);
+            transition: transform 0.2s;
+        }
+        .affiliate-btn:hover { transform: scale(1.05); }
+
+        /* Fix for scaling text without breaking words */
+        .preview-container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .preview-text {
+            display: inline-block;
+            white-space: nowrap; /* Forces one line to prevent the break seen in screenshot */
+            line-height: 1;
+            transform-origin: center center;
+            will-change: transform;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="snow" class="snow-container"></div>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center text-center p-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/70 to-[#0a0a0a]"></div>
+            <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-30">
+        </div>
+
+        <div class="relative z-10 max-w-6xl">
+            <h1 class="font-mountains text-6xl md:text-[7.5rem] mb-6 text-white leading-[0.9] tracking-tighter drop-shadow-2xl">
+                Christmas magic <br> 
+                <span class="text-red-600 block md:inline mt-4 md:mt-0 italic">in every letter</span>
+            </h1>
+            <p class="text-lg md:text-2xl font-light text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Your customers are not buying fonts — they are buying emotions. Turn your holiday designs into premium products with handpicked Christmas fonts that come with clear commercial rights.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://www.creativefabrica.com/fonts/christmas-fonts/ref/5466775/?campaign=christmas-fonts" target="_blank" class="affiliate-btn text-white px-10 py-5 rounded-full font-bold text-lg shadow-2xl">
+                    View the full collection
+                </a>
+                <a href="#tester" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-10 py-5 rounded-full font-semibold backdrop-blur-md transition-all">
+                    Try your own text
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pain Points Section (Stop losing sales) -->
+    <section class="relative z-10 py-24 bg-red-900/10 text-white border-b border-white/5">
+        <div class="container mx-auto px-6">
+            <h2 class="text-center font-cinzel text-3xl md:text-4xl gold-gradient-text mb-16 uppercase tracking-widest leading-tight">Stop losing sales to “free” fonts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <!-- Column 1 -->
+                <div>
+                    <div class="text-red-600 text-5xl mb-4 font-bold font-sans">✕</div>
+                    <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">License risk</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Free fonts often hide “personal use only” in the fine print. One takedown notice can wipe out your listings, reviews and holiday revenue.
+                    </p>
+                    <p class="text-white font-semibold">
+                        Use Christmas fonts that are clearly licensed for print, POD, Etsy, Shopify and client work.
+                    </p>
+                </div>
+                <!-- Column 2 -->
+                <div>
+                    <div class="text-red-600 text-5xl mb-4 font-bold font-sans">✕</div>
+                    <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">Cheap, overused look</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Generic system fonts make even a great product look flat and mass‑market. Buyers scroll past designs that feel “template‑like”.
+                    </p>
+                    <p class="text-white font-semibold">
+                        Premium holiday typography instantly makes your mugs, shirts and cards look like a gift worth paying more for.
+                    </p>
+                </div>
+                <!-- Column 3 -->
+                <div>
+                    <div class="text-red-600 text-5xl mb-4 font-bold font-sans">✕</div>
+                    <h3 class="text-xl font-bold mb-3 uppercase tracking-tighter">Wasted hours of searching</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Digging through thousands of mediocre fonts can eat half a workday before you even open your design software.
+                    </p>
+                    <p class="text-white font-semibold">
+                        Here you get 6 proven best‑selling Christmas fonts for 2026, ready for laser cutting, print and web in minutes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="relative z-10 container mx-auto px-6 py-20 text-white">
+        
+        <!-- Font Tester Section -->
+        <section id="tester" class="mb-32 text-center">
+            <div class="mb-12">
+                <h2 class="font-cinzel text-4xl md:text-5xl gold-gradient-text mb-4 uppercase tracking-tighter">Try your own text</h2>
+                <h4 class="text-lg font-bold text-red-500 uppercase tracking-widest mb-2">Preview your brand name or greeting in 6 Christmas fonts</h4>
+                <p class="text-gray-400 max-w-3xl mx-auto mb-10">
+                    Type a brand name, product title or holiday message and instantly see how it looks in every font in this collection. Pick the style that matches your shop, download the font and drop it straight into your favorite design tool.
+                </p>
+            </div>
+            <div class="max-w-3xl mx-auto mb-16 px-4">
+                <input type="text" id="userInput" placeholder="Type your text here…" 
+                       class="w-full bg-white/5 border border-white/10 rounded-2xl px-8 py-6 text-2xl text-center focus:outline-none focus:border-red-600 transition-colors shadow-2xl">
+            </div>
+        </section>
+
+        <!-- Collection Grid -->
+        <section id="collection" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 1. Christmas Grinch -->
+            <div class="glass-card p-10 rounded-[2.5rem] items-center text-center">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-red-500 font-bold mb-4">The Grinch Style</span>
+                <h3 class="text-xs font-light text-gray-500 mb-6 uppercase">Christmas Grinch</h3>
+                <div class="preview-container">
+                    <div class="font-cookie text-6xl preview-text">Sweet Cookies</div>
+                </div>
+                <a href="https://www.creativefabrica.com/product/christmas-grinch-2/ref/5466775/" target="_blank" class="w-full text-center bg-red-700 hover:bg-red-600 text-white py-4 rounded-2xl font-bold mt-auto transition-all">Download Font</a>
+            </div>
+
+            <!-- 2. Chasing Christmas -->
+            <div class="glass-card p-10 rounded-[2.5rem] items-center text-center">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-red-500 font-bold mb-4">Playful Script</span>
+                <h3 class="text-xs font-light text-gray-500 mb-6 uppercase">Chasing Christmas</h3>
+                <div class="preview-container">
+                    <div class="font-spirax text-6xl preview-text">Fairytale</div>
+                </div>
+                <a href="https://www.creativefabrica.com/product/chasing-christmas/ref/5466775/" target="_blank" class="w-full text-center bg-red-700 hover:bg-red-600 text-white py-4 rounded-2xl font-bold mt-auto transition-all">Download Font</a>
+            </div>
+
+            <!-- 3. Christmas Special -->
+            <div class="glass-card p-10 rounded-[2.5rem] items-center text-center">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-red-500 font-bold mb-4">Modern Classic</span>
+                <h3 class="text-xs font-light text-gray-500 mb-6 uppercase">Christmas Special</h3>
+                <div class="preview-container">
+                    <div class="font-satisfy text-6xl preview-text">Handmade Love</div>
+                </div>
+                <a href="https://www.creativefabrica.com/product/christmas-668/ref/5466775/" target="_blank" class="w-full text-center bg-red-700 hover:bg-red-600 text-white py-4 rounded-2xl font-bold mt-auto transition-all">Download Font</a>
+            </div>
+
+            <!-- 4. Great Vibes -->
+            <div class="glass-card p-10 rounded-[2.5rem] items-center text-center">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-red-500 font-bold mb-4">Elegant Script</span>
+                <h3 class="text-xs font-light text-gray-500 mb-6 uppercase">Wonderful Christmas</h3>
+                <div class="preview-container">
+                    <div class="font-vibes text-6xl preview-text">Wonderful Time</div>
+                </div>
+                <a href="https://www.creativefabrica.com/product/wonderful-christmas-4/ref/5466775/" target="_blank" class="w-full text-center bg-red-700 hover:bg-red-600 text-white py-4 rounded-2xl font-bold mt-auto transition-all">Download Font</a>
+            </div>
+
+            <!-- 5. Cinzel Decorative -->
+            <div class="glass-card p-10 rounded-[2.5rem] items-center text-center">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-red-500 font-bold mb-4">Decorative Serif</span>
+                <h3 class="text-xs font-light text-gray-500 mb-6 uppercase">Cinzel Decorative</h3>
+                <div class="preview-container">
+                    <div class="font-cinzel text-5xl preview-text uppercase">Winter Glow</div>
+                </div>
+                <a href="https://www.creativefabrica.com/product/christmas-lights-78/ref/5466775/" target="_blank" class="w-full text-center bg-red-700 hover:bg-red-600 text-white py-4 rounded-2xl font-bold mt-auto transition-all">Download Font</a>
+            </div>
+
+            <!-- 6. Mountains of Christmas -->
+            <div class="glass-card p-10 rounded-[2.5rem] items-center text-center">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-red-500 font-bold mb-4">Bestseller Choice</span>
+                <h3 class="text-xs font-light text-gray-500 mb-6 uppercase">Mountains of Christmas</h3>
+                <div class="preview-container">
+                    <div class="font-mountains text-6xl preview-text">Merry Design</div>
+                </div>
+                <a href="https://www.creativefabrica.com/product/christmas-font/ref/5466775/" target="_blank" class="w-full text-center bg-red-700 hover:bg-red-600 text-white py-4 rounded-2xl font-bold mt-auto transition-all">Download Font</a>
+            </div>
+        </section>
+
+        <p class="text-center text-gray-500 text-xs mt-16 max-w-2xl mx-auto italic opacity-50">
+            Each font in this selection comes with commercial use rights through Creative Fabrica’s license. Always check the license details before publishing new products.
+        </p>
+
+        <!-- All Access Trial Section -->
+        <section class="mt-32 p-8 md:p-16 rounded-[4rem] bg-gradient-to-br from-red-950/60 to-black border border-red-800/30 overflow-hidden relative shadow-2xl">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-red-600/10 blur-[100px] rounded-full"></div>
+            
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <h2 class="font-cinzel text-3xl md:text-5xl gold-gradient-text uppercase leading-tight tracking-tighter">Do not leave Christmas money on the table</h2>
+                    <div class="space-y-4 text-lg text-gray-300">
+                        <p>Start a free All Access trial with Creative Fabrica and instantly tap into over 7 million fonts, graphics and mockups under one commercial license.</p>
+                        <p>During your trial you can download up to 10 products for free, test new Christmas designs in your shop and see what actually sells before you commit.</p>
+                    </div>
+
+                    <!-- How it works -->
+                    <div class="pt-10 border-t border-white/5">
+                        <h3 class="font-bold text-white text-xl mb-6 uppercase tracking-wider">How the free All Access trial works:</h3>
+                        <ul class="space-y-5 text-sm text-gray-300">
+                            <li class="flex items-start gap-4">
+                                <span class="bg-red-700 text-white w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</span>
+                                <span>Create your Creative Fabrica account and start your free trial.</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="bg-red-700 text-white w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</span>
+                                <span>Download up to 10 fonts or other products for your Christmas designs.</span>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="bg-red-700 text-white w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</span>
+                                <span>If you love it, keep your subscription. If not, cancel before renewal with a few clicks.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center bg-white/5 p-12 rounded-[3rem] border border-white/5 backdrop-blur-md">
+                    <a href="https://www.creativefabrica.com/fonts/christmas-fonts/ref/5466775/?campaign=christmas-fonts" target="_blank" class="bg-white text-black px-12 py-6 rounded-2xl font-bold text-xl hover:scale-105 transition-all shadow-2xl mb-6 w-full text-center">
+                        Start your free trial
+                    </a>
+                    <p class="text-[11px] text-gray-500 leading-relaxed text-center px-4 max-w-xs">
+                        Your trial renews at €3.99/month, billed yearly, 1 month after your trial starts or once you use your 10th download credit. You can cancel anytime.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="relative z-10 py-20 text-center text-gray-500 border-t border-white/5 bg-black/40 backdrop-blur-md mt-20">
+        <div class="container mx-auto px-6">
+            <p class="mb-4 text-xs font-medium uppercase tracking-[0.3em]">© 2025 Best Xmas Fonts Selection. Made with ❤️ for creators.</p>
+            <p class="text-[10px] max-w-2xl mx-auto leading-loose opacity-40 uppercase tracking-widest px-6 italic">
+                Affiliate Disclaimer: By placing orders through links on this site, you support our project. We may earn a small commission at no extra cost to you.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function createSnowflakes() {
+            const snowContainer = document.getElementById('snow');
+            for (let i = 0; i < 60; i++) {
+                const flake = document.createElement('div');
+                flake.className = 'snowflake';
+                const size = Math.random() * 4 + 2 + 'px';
+                flake.style.width = size; flake.style.height = size;
+                flake.style.left = Math.random() * 100 + 'vw';
+                flake.style.animationDuration = Math.random() * 3 + 4 + 's';
+                flake.style.animationDelay = Math.random() * 5 + 's';
+                flake.style.opacity = Math.random();
+                snowContainer.appendChild(flake);
+            }
+        }
+
+        // SCALING LOGIC: Fixes the issue from the screenshot by preventing word breaking
+        function updatePreviews() {
+            const input = document.getElementById('userInput');
+            const previews = document.querySelectorAll('.preview-text');
+            const defaultTexts = ["Sweet Cookies", "Fairytale", "Handmade Love", "Wonderful Time", "Winter Glow", "Merry Design"];
+            
+            previews.forEach((preview, index) => {
+                const textValue = input.value.trim() || defaultTexts[index];
+                preview.textContent = textValue;
+                
+                // Reset scale to measure real width
+                preview.style.transform = 'scale(1)';
+                
+                const container = preview.parentElement;
+                const containerWidth = container.offsetWidth - 40; // Horizontal margin
+                const textWidth = preview.scrollWidth;
+                
+                // If text is wider than the card, shrink it proportionally via Scale
+                if (textWidth > containerWidth) {
+                    const ratio = containerWidth / textWidth;
+                    preview.style.transform = `scale(${ratio})`;
+                }
+            });
+        }
+
+        document.getElementById('userInput').addEventListener('input', updatePreviews);
+        window.onload = () => { createSnowflakes(); updatePreviews(); };
+        window.onresize = updatePreviews;
+    </script>
+</body>
+</html>
